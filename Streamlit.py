@@ -117,7 +117,7 @@ st.markdown(
 @st.cache_resource
 def load_generator():
     g = Generator()
-    g.load_state_dict(torch.load("generator.pth", map_location=torch.device("cpu")))
+    g.load_state_dict(torch.load("Generator.pth", map_location=torch.device("cpu")))
     g.eval()
     return g
 
