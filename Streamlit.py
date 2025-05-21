@@ -1,5 +1,5 @@
 import streamlit as st #web framework
-import torch #ai/ml operations
+import torch #aiml operations
 import torchvision.utils as vutils #image grids
 import matplotlib.pyplot as plt #display images
 from PlainGenerator import Generator #ai model
@@ -62,12 +62,18 @@ st.markdown(
     
     .social-link {{
         color: white !important;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: all 0.3s ease;
+        font-weight: 500;
     }}
     
     .social-link:hover {{
         color: #ff66cc !important;
         transform: translateY(-2px);
-    }}
+        }}
     
     .stButton>button {{
         display: block;
@@ -122,7 +128,7 @@ st.markdown("""
     <h1 class="main-title">Anime Character Generator</h1>
     <p class="subtitle">Create unique anime characters</p>
     <div class="social-links">
-        <a href="https://github.com/D-E-E-P-T-H-I" class="social-link" target="_blank">
+        <a href="https://github.com/D-E-E-P-T-H-I/Anime-Character-Generator" class="social-link" target="_blank">
             <i class="fab fa-github"></i> GitHub
         </a>
     </div>
@@ -151,4 +157,5 @@ with st.container():
             st.markdown('</div>', unsafe_allow_html=True)
     
     st.markdown('</div>', unsafe_allow_html=True)
+
 
